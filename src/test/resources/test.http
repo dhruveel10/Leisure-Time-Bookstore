@@ -1,0 +1,291 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+GET http://localhost:8080/AkshitaBookstoreOrder/api/categories
+Accept: application/json
+
+###
+# curl 'http://localhost:8080/AkshitaBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en'
+#  -H 'Cache-Control: max-age=0'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'Sec-GPC: 1'
+#  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1003,"title":"The Catcher in the Rye","author":"J. D. Salinger","description":"","price":599,"rating":0,"isPublic":false,"isFeatured":false,"categoryId":1001},"quantity":2}]},"customerForm":{"name":"bbbb","address":"1234riuh","phone":"5405585571","email":"dr@vt.edu","ccNumber":"4444 3333 2222 1111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/AkshitaBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en
+Cache-Control: max-age=0
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-GPC: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1003,
+          "title": "The Catcher in the Rye",
+          "author": "J. D. Salinger",
+          "description": "",
+          "price": 599,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": false,
+          "categoryId": 1001
+        },
+        "quantity": 2
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "bbbb",
+    "address": "1234riuh",
+    "phone": "5405585571",
+    "email": "dr@vt.edu",
+    "ccNumber": "4444 3333 2222 1111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+# curl 'http://localhost:8080/AkshitaBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en'
+#  -H 'Cache-Control: max-age=0'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'Sec-GPC: 1'
+#  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1003,"title":"The Catcher in the Rye","author":"J. D. Salinger","description":"","price":599,"rating":0,"isPublic":false,"isFeatured":false,"categoryId":1001},"quantity":2}]},"customerForm":{"name":"bbbb","address":"1234riuh","phone":"5405585571","email":"dr@vt.net.com","ccNumber":"4444 3333 2222 1111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/AkshitaBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en
+Cache-Control: max-age=0
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-GPC: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1003,
+          "title": "The Catcher in the Rye",
+          "author": "J. D. Salinger",
+          "description": "",
+          "price": 599,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": false,
+          "categoryId": 1001
+        },
+        "quantity": 2
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "bbbb",
+    "address": "1234riuh",
+    "phone": "5405585571",
+    "email": "dr@vt.net.com",
+    "ccNumber": "4444 3333 2222 1111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+# curl 'http://localhost:8080/AkshitaBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en'
+#  -H 'Cache-Control: max-age=0'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Cookie: JSESSIONID=F5C5EA7DD0BABB54457F96343C87855F'
+#  -H 'Origin: http://localhost:8080'
+#  -H 'Referer: http://localhost:8080/AkshitaBookstoreOrder/client'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-origin'
+#  -H 'Sec-GPC: 1'
+#  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1003,"title":"The Catcher in the Rye","author":"J. D. Salinger","description":"","price":599,"rating":0,"isPublic":false,"isFeatured":false,"categoryId":1001},"quantity":1},{"book":{"bookId":1001,"title":"It Ends With Us","author":"Collen Hoover","description":"","price":699,"rating":0,"isPublic":true,"isFeatured":true,"categoryId":1001},"quantity":1},{"book":{"bookId":1004,"title":"Lord of the Flies","author":"Lois Lowry","description":"","price":699,"rating":0,"isPublic":false,"isFeatured":false,"categoryId":1001},"quantity":1}]},"customerForm":{"name":"bbbb","address":"1234riuh","phone":"5405585571","email":"dr@vt.edu","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/AkshitaBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-US,en
+Cache-Control: max-age=0
+Connection: keep-alive
+Cookie: JSESSIONID=F5C5EA7DD0BABB54457F96343C87855F
+Origin: http://localhost:8080
+Referer: http://localhost:8080/AkshitaBookstoreOrder/client
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Sec-GPC: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1003,
+          "title": "The Catcher in the Rye",
+          "author": "J. D. Salinger",
+          "description": "",
+          "price": 599,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": false,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      },
+      {
+        "book": {
+          "bookId": 1001,
+          "title": "It Ends With Us",
+          "author": "Collen Hoover",
+          "description": "",
+          "price": 699,
+          "rating": 0,
+          "isPublic": true,
+          "isFeatured": true,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      },
+      {
+        "book": {
+          "bookId": 1004,
+          "title": "Lord of the Flies",
+          "author": "Lois Lowry",
+          "description": "",
+          "price": 699,
+          "rating": 0,
+          "isPublic": false,
+          "isFeatured": false,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "bbbb",
+    "address": "1234riuh",
+    "phone": "5405585571",
+    "email": "dr@vt.edu",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+# curl 'http://localhost:8080/AkshitaBookstoreTransact/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-US,en;q=0.9'
+#  -H 'Cache-Control: max-age=0'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "macOS"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1008,"title":"First of His Kind","author":"Dan Sugralinov","description":"","price":699,"rating":0,"isPublic":true,"isFeatured":false,"categoryId":1004},"quantity":1}]},"customerForm":{"name":"Dhruveel Chouhan","address":"1900 Foxhunt Ln","phone":"5405585571","email":"dhruveel10@vt.edu","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2023}}'
+#  --compressed
+POST http://localhost:8080/AkshitaBookstoreTransact/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Cache-Control: max-age=0
+Connection: keep-alive
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+sec-ch-ua: "Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1008,
+          "title": "First of His Kind",
+          "author": "Dan Sugralinov",
+          "description": "",
+          "price": 699,
+          "rating": 0,
+          "isPublic": true,
+          "isFeatured": false,
+          "categoryId": 1004
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Dhruveel Chouhan",
+    "address": "1900 Foxhunt Ln",
+    "phone": "5405585571",
+    "email": "dhruveel10@vt.edu",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2023
+  }
+}
+
+###
+
+
+
+
+
